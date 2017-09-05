@@ -1,6 +1,6 @@
 (function() {
   angular
-  .module("formatura", ['ngMaterial'])
+  .module("formatura",[])
   .controller('MyController', ['$scope', function($scope) {
 
 }])
@@ -13,7 +13,7 @@
         formatView: "@"
       },
       replace: !0,
-      template: "<div class='box'></div>",
+      template: "<div style='font-size:5em;text-shadow: 2px 2px #222;'></div>",
       link: function(e, t) {
         e.insertDate = function() {
           e.setMessageExpired(e.expireMessage), e.setDateFinal(e.setDate), e.start()

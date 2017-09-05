@@ -1,24 +1,87 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="pt">
 <head>
-  <meta charset="utf-8">
-  <title>Formatura</title>
-  <link rel="stylesheet" href="assets/reset.css">
-  <link rel="stylesheet" href="assets/style.css">
+<meta name="Description" CONTENT="Author: Tiago Matana, Category: Developer">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="logo.png">
+	<title>Tiago Matana - DEVELOPMENT</title>
+
+	<!-- CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="assets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+
+    <script src="assets/js/modernizr.custom.js"></script>
+
 </head>
+<body ng-app="formatura" ng-cloak>
 
-<body class="imagem" ng-app="formatura" ng-cloak>
+	<!-- Preloader -->
 
-<i-countdown set-date="2017-10-21 20:00:00" format-view="%d Dia(s) %h:%i:%s" expire-message="Acabou o tempo"><i-countdown>
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
 
-  <script src="./node_modules/angular/angular.js"></script>
+	<!-- Home start -->
 
-  <script src="./node_modules/angular-aria/angular-aria.js"></script>
-  <script src="./node_modules/angular-animate/angular-animate.js"></script>
-  <script src="./node_modules/angular-material/angular-material.js"></script>
-  <script src="../app.js" charset="utf-8"></script>
+	<section id="home" class="pfblock-image screen-height">
+        <div class="home-overlay"></div>
+		<div class="intro">
+			<i-countdown set-date="2017-10-21 20:00:00" format-view="%d Dia(s) %h:%i:%s" expire-message="Acabou o tempo"> <i-countdown>
+		</div>
+
+
+
+	</section>
+
+  <!-- <script src="./node_modules/angular/angular.js"></script> -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <script src="./node_modules/angular-aria/angular-aria.js"></script> -->
+  <!-- <script src="./node_modules/angular-animate/angular-animate.js"></script> -->
+
+  <!-- <script src="./node_modules/angular-material/angular-material.js"></script> -->
+  <!-- Angular Material requires Angular.js Libraries -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <script src="app.js" charset="utf-8"></script>
+
+	<!-- Javascript files -->
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.cbpQTRotator.js"></script>
+	<script src="assets/js/custom.js"></script>
+<script>
+$(function() {
+var w = window.innerWidth;
+if(w>400){
+ $("#whatsSquare").attr("href","");
+$("#whatsIcon").attr("href","");
+}
+ });
+
+</script>
 
 </body>
-
 </html>
