@@ -2,7 +2,7 @@
   angular
   .module("formatura", ['ngMaterial'])
   .controller('MyController', ['$scope', function($scope) {
-  $scope.backgroundStyle = {background: '#000000'};
+
 }])
   .directive("iCountdown", function() {
     return {
@@ -13,7 +13,7 @@
         formatView: "@"
       },
       replace: !0,
-      template: "<div></div>",
+      template: "<div class='box'></div>",
       link: function(e, t) {
         e.insertDate = function() {
           e.setMessageExpired(e.expireMessage), e.setDateFinal(e.setDate), e.start()

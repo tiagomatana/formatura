@@ -16,12 +16,12 @@ gulp.task('browser-sync', function() {
         }
       ]
     },
-    startPath: 'Formatura/'
+    startPath: 'formatura/'
   });
 
   gulp.watch([
-    'Formatura/*.html',
-    'Formatura/**/*.js',
-    'Formatura/**/*.css'
+    'formatura/**/*.html',
+    'formatura/**/*.js',
+    'formatura/**/*.css'
   ]).on('change', browserSync.reload);
 });
