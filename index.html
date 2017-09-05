@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html ng-app="formatura">
+<html ng-app="formatura" ng-cloak class="box">
 
 <head>
   <meta charset="utf-8">
   <title></title>
+  <link rel="stylesheet" href="assets/reset.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body layout-align="center center">
+<body background="img/background.jpg" ng-controller="MyController">
 
-  <div layout="row">
-    <div class="box" flex>
+<div  >
+
       <i-countdown set-date="2017-10-21 19:00:00" format-view="%d dias %h hrs %i min %s seg" expire-message="Acabou o tempo"></i-countdown>
-    </div>
 
   </div>
 

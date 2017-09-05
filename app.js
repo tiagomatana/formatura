@@ -1,6 +1,9 @@
 (function() {
   angular
   .module("formatura", ['ngMaterial'])
+  .controller('MyController', ['$scope', function($scope) {
+  $scope.backgroundStyle = {background: '#000000'};
+}])
   .directive("iCountdown", function() {
     return {
       restrict: "EAC",
@@ -10,7 +13,7 @@
         formatView: "@"
       },
       replace: !0,
-      template: "<div flex></div>",
+      template: "<div></div>",
       link: function(e, t) {
         e.insertDate = function() {
           e.setMessageExpired(e.expireMessage), e.setDateFinal(e.setDate), e.start()
