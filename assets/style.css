@@ -3,17 +3,22 @@ background-size : cover;
   font-family: sans-serif;
   height: auto;
 }
-
+img {
+  height: auto;
+  position: cover;
+}
 .box {
-  width: auto;
+  text-align: center;
+
+  width: 100%;
   display: inline-block;
-  padding: 20px;
+  float: left;
   border: none;
-  border-radius: 8px;
+
   font-size: 30px;
   position: relative;
   float: left;
-  background: rgba(255, 255, 255, 0.7);
+  background-color: tomato;
   bottom: 0;
 
 
