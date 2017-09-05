@@ -1,0 +1,32 @@
+{
+  "name": "formatura",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "gulp browser-sync",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagomatana/formatura.git"
+  },
+  "author": "Tiago Matana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiagomatana/formatura/issues"
+  },
+  "homepage": "https://github.com/tiagomatana/formatura#readme",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-animate": "^1.6.6",
+    "angular-aria": "^1.6.6",
+    "angular-csv-import": "0.0.27",
+    "angular-material": "^1.1.4",
+    "gulp": "^3.9.1",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
+  }
+}
